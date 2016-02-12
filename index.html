@@ -11,10 +11,18 @@
 	<style>
 		*{padding:0;margin:0;font-family:'PT serif',\5FAE\8EDF\6B63\9ED1\9AD4,\5FAE\8F6F\96C5\9ED1,\534E\6587\7EC6\9ED1;}
 		h1,h2,h3,h4,h5,h6,h7,p{font-family:'PT serif',\5FAE\8EDF\6B63\9ED1\9AD4,\5FAE\8F6F\96C5\9ED1,\534E\6587\7EC6\9ED1;}
+		#header{
+			background-color:#006699;
+		}
+		#title{text-align:center;}
+		#title h1,#title p{color:#FFFFFF;font-weight:900;}
+		#main{background-color:#6699CC;}
+		#main div div p,#main div div h3{color:#FFFFFF;font-weight:900;}
 	</style>
 </head>
 <body>
-<header>
+<header id="header">
+	<div class="fixed">
 	<nav class="top-bar" data-topbar>
 		<ul class="title-area">
 			<li class="name">
@@ -25,18 +33,41 @@
 
 		<section class="top-bar-section">
 			<ul class="right">
-				<li class="active"><a href="#">主页</a></li>
+				<li class="active"><a href="#">トップページ</a></li>
 				<li><a href="#">Tor</a></li>
 				<li><a href="#">Shadowsocks</a></li>
-				<li><a href="#">Goagent</a></li> 
 			</ul>
 		</section>
 	</nav>
-	<section class="title">
-		<h1></h1>
-		<p></p>
-	</section>
+	</div>
+	<article class="title" id="title">
+		<h1>TorMoe</h1>
+		<p>科学の-軽快な-自由な-ネットサーフィン</p>
+	</article>
 </header>
+<section id="main">
+	<div class="row">
+		<div class="medium-4 columns">
+			<h3>チームの力</h3>
+			<h6>/ 团队的力量</h6>
+			<p></p>
+			<a href="https://plus.google.com/communities/109088687573538873492" target="_blank">
+				<button type="button" class="button expand">Join us Google+ Get Support</button>
+			</a>
+		</div>
+		<div class="medium-4 columns">
+			<h3>Tor</h3>
+			<h6>/ 洋葱代理</h6>
+			<p>Anonymity OnlineProtect your privacy. Defend yourself against network surveillance and traffic analysis.</p>
+		</div>
+		<div class="medium-4 columns">
+			<h3>Shadowsocks</h3>
+			<h6>/ 影梭</h6>
+			<p>A secure socks5 proxy,designed to protect your Internet traffic.</p>
+			<p>If you want to keep a secret, you must also hide it from yourself.</p>
+		</div>
+	</div>
+</section>
 
 <!-- 初始化 Foundation JS -->
 <script>
@@ -44,6 +75,12 @@ $(document).ready(function() {
 $(document).foundation();
 })
 var 高度 = document.documentElement.clientHeight;
+var 半个高度 = 高度*0.35;
+var 半半个高度 = 高度*0.1;
+document.getElementById("header").style.height=高度+"px";
+document.getElementById("title").style.paddingTop=半个高度+"px";
+document.getElementById("main").style.padding="10%"
+
 
 </script>
 
