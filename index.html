@@ -17,7 +17,9 @@
 		#title{text-align:center;}
 		#title h1,#title p{color:#FFFFFF;font-weight:900;}
 		#main{background-color:#6699CC;}
-		#main div div p,#main div div h3{color:#FFFFFF;font-weight:900;}
+		#main div div p,#main div div h3,#main h2,#main p{color:#FFFFFF;font-weight:900;}
+		#main p a{color:#FFFFFF;font-weight:900;text-decoration:underline;}
+		#joinus{background-color:#CC99CC;}
 	</style>
 </head>
 <body>
@@ -34,8 +36,8 @@
 		<section class="top-bar-section">
 			<ul class="right">
 				<li class="active"><a href="#">トップページ</a></li>
-				<li><a href="#">Tor</a></li>
-				<li><a href="#">Shadowsocks</a></li>
+				<li><a href="http://torproject.org/" target="_blank">Tor</a></li>
+				<li><a href="http://shadowsocks.org/">Shadowsocks</a></li>
 			</ul>
 		</section>
 	</nav>
@@ -46,27 +48,33 @@
 	</article>
 </header>
 <section id="main">
+	<h2>について</h2>
+	<p>// About</p>
 	<div class="row">
 		<div class="medium-4 columns">
 			<h3>チームの力</h3>
-			<h6>/ 团队的力量</h6>
-			<p></p>
+			<h6>// 团队的力量</h6>
+			<p>May be here is the most of MOE group helping U to step over ＧＦＷ</p>
+			<p>We love Internet, Freedom, Python, Javascript and hate any other limiting thing. We love study many fashion thing help everybody!</p>
 			<a href="https://plus.google.com/communities/109088687573538873492" target="_blank">
 				<button type="button" class="button expand">Join us Google+ Get Support</button>
 			</a>
 		</div>
 		<div class="medium-4 columns">
 			<h3>Tor</h3>
-			<h6>/ 洋葱代理</h6>
-			<p>Anonymity OnlineProtect your privacy. Defend yourself against network surveillance and traffic analysis.</p>
+			<h6>// 洋葱代理</h6>
+			<p>Anonymity OnlineProtect your privacy. Defend yourself against network surveillance and traffic analysis.<br/><a href="http://torproject.org/" target="_blank"> Go to >></a></p>
 		</div>
 		<div class="medium-4 columns">
 			<h3>Shadowsocks</h3>
-			<h6>/ 影梭</h6>
+			<h6>// 影梭</h6>
 			<p>A secure socks5 proxy,designed to protect your Internet traffic.</p>
-			<p>If you want to keep a secret, you must also hide it from yourself.</p>
+			<p>If you want to keep a secret, you must also hide it from yourself.<br/><a href="http://shadowsocks.org/"> Go to>></a></p>
 		</div>
 	</div>
+</section>
+<section id="joinus">
+
 </section>
 
 <!-- 初始化 Foundation JS -->
@@ -79,7 +87,8 @@ var 半个高度 = 高度*0.35;
 var 半半个高度 = 高度*0.1;
 document.getElementById("header").style.height=高度+"px";
 document.getElementById("title").style.paddingTop=半个高度+"px";
-document.getElementById("main").style.padding="10%"
+document.getElementById("main").style.padding="10%";
+document.getElementById("joinus").style.padding="10%";
 
 
 </script>
